@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pédagogie et Humanités - Revue des sciences pédagogiques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header (Identique à l'accueil mais avec liens relatifs ajustés) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-blue-900 text-white flex items-center justify-center rounded-sm font-serif font-bold text-xl">
+                    T</div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold text-blue-900 leading-tight">Trajectoires Sociales</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wider">Philosophie, Éthique & Éducation</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../index.html" class="text-gray-600 hover:text-blue-900 transition">Accueil</a>
+                <a href="#" class="text-blue-900 font-bold border-b-2 border-blue-900">Les Revues</a>
+                <a href="comites-peh.html" class="text-gray-600 hover:text-blue-900 transition">Comités</a>
+                <a href="../index.html#contact" class="text-gray-600 hover:text-blue-900 transition">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-600"><i class="fas fa-bars text-2xl"></i></button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb (Fil d'ariane) -->
+    <div class="bg-gray-100 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-3 text-sm text-gray-500">
+            <a href="../index.html" class="hover:text-blue-900">Accueil</a>
+            <span class="mx-2">/</span>
+            <a href="../index.html#revues" class="hover:text-blue-900">Revues</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-800 font-semibold">Pédagogie et Humanités</span>
+        </div>
+    </div>
+
+    <!-- Contenu Principal -->
+    <main class="container mx-auto px-6 py-12 flex-grow">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+            <!-- Sidebar (Info Revue) -->
+            <aside class="lg:col-span-4">
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100 sticky top-24">
+                    <!-- Image de couverture simulée -->
+                    <div
+                        class="w-full aspect-[3/4] bg-blue-900 mb-6 flex items-center justify-center text-white relative overflow-hidden rounded">
+                        <!-- Motif décoratif -->
+                        <div
+                            class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent">
+                        </div>
+                        <div class="text-center p-4 z-10">
+                            <div
+                                class="text-2xl font-serif font-bold mb-2 uppercase tracking-widest border-b border-white/30 pb-2">
+                                Revue</div>
+                            <div class="text-3xl font-serif font-bold mb-4">Pédagogie<br>& Humanités</div>
+                            <div class="text-sm uppercase tracking-wide opacity-80">Vol. 1 - 2024</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <span class="block text-xs text-gray-500 uppercase font-bold">Directeur de
+                                publication</span>
+                            <span class="text-gray-800">Pr. Jean Dupont</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-gray-500 uppercase font-bold">Périodicité</span>
+                            <span class="text-gray-800">Trimestrielle</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-gray-500 uppercase font-bold">ISSN</span>
+                            <span class="text-gray-800">1234-5678 (Print)</span>
+                        </div>
+
+                        <div class="pt-4 space-y-3">
+                            <a href="../appel-a-contribution.html"
+                                class="block text-center w-full bg-blue-900 text-white py-3 px-4 rounded hover:bg-blue-800 transition font-bold shadow-md">
+                                <i class="fas fa-file-upload mr-2"></i> Soumettre un article
+                            </a>
+                            <a href="comites-peh.html"
+                                class="block text-center w-full bg-white border border-blue-900 text-blue-900 py-3 px-4 rounded hover:bg-blue-50 transition font-bold">
+                                <i class="fas fa-users mr-2"></i> Comité scientifique
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Contenu Central -->
+            <section class="lg:col-span-8">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 border-l-4 border-blue-900 pl-4">
+                    Pédagogie et Humanités
+                    <span class="block text-lg text-gray-500 font-normal font-sans mt-2">Revue des sciences
+                        pédagogiques</span>
+                </h1>
+
+                <!-- Description Principale -->
+                <div class="prose prose-lg text-gray-600 mb-12 text-justify">
+                    <p class="mb-4">
+                        La Revue <strong>"PEDAGOGIE ET HUMANITES"</strong> est une revue des sciences pédagogiques,
+                        ouverte sur la problématique de la production des connaissances dans le champ des sciences
+                        humaines en général.
+                    </p>
+                    <p class="mb-4">
+                        La revue est affiliée au Laboratoire de Pédagogie et de Didactique des Humanités (LAPEDIH) de
+                        l'ENS-UAC Bénin. Elle constitue de ce fait un espace de promotion et de vulgarisation des
+                        travaux de recherches effectués par les enseignants-chercheurs évoluant dans le vaste domaine
+                        des sciences humaines et sociales.
+                    </p>
+                </div>
+
+                <!-- Axes Thématiques (Accordion style) -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Axes thématiques (Juin 2023)</h2>
+                    <div class="space-y-4">
+
+                        <!-- Axe 1 -->
+                        <details
+                            class="group bg-white rounded-lg border border-gray-200 shadow-sm open:ring-1 open:ring-blue-100">
+                            <summary
+                                class="flex justify-between items-center font-bold cursor-pointer p-4 list-none text-blue-900 hover:bg-blue-50 transition">
+                                <span>Axe 1 : Recherche et innovation</span>
+                                <span class="transition group-open:rotate-180">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 p-4 pt-0 border-t border-gray-100 mt-2">
+                                <ul class="list-disc pl-5 space-y-2 mt-2">
+                                    <li>Recherche et innovation en pédagogie : Défis et opportunités pour l'atteinte de
+                                        l'objectif de développement durable 9 en Afrique</li>
+                                    <li>Recherche scientifique et innovations dans les ENS d'Afrique francophone :
+                                        enjeux et perspectives</li>
+                                    <li>Ethique et financement de la recherche dans les ENS d'Afrique francophone</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- Axe 2 -->
+                        <details
+                            class="group bg-white rounded-lg border border-gray-200 shadow-sm open:ring-1 open:ring-blue-100">
+                            <summary
+                                class="flex justify-between items-center font-bold cursor-pointer p-4 list-none text-blue-900 hover:bg-blue-50 transition">
+                                <span>Axe 2 : Langues et société</span>
+                                <span class="transition group-open:rotate-180">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 p-4 pt-0 border-t border-gray-100 mt-2">
+                                <ul class="list-disc pl-5 space-y-2 mt-2">
+                                    <li>Modélisation des langues en contexte plurilingue en Afrique francophone</li>
+                                    <li>Didactique de langues et acquisition des compétences en langues africaines</li>
+                                    <li>Connexion linguistique et approches pédagogiques : la psycholinguistique et la
+                                        littérature orale en question</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- Axe 3 -->
+                        <details
+                            class="group bg-white rounded-lg border border-gray-200 shadow-sm open:ring-1 open:ring-blue-100">
+                            <summary
+                                class="flex justify-between items-center font-bold cursor-pointer p-4 list-none text-blue-900 hover:bg-blue-50 transition">
+                                <span>Axe 3 : Enseignement-apprentissage en contexte APC</span>
+                                <span class="transition group-open:rotate-180">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 p-4 pt-0 border-t border-gray-100 mt-2">
+                                <ul class="list-disc pl-5 space-y-2 mt-2">
+                                    <li>Les stratégies d'apprentissage à l'épreuve des pesanteurs de la tradition</li>
+                                    <li>La sociologie de l'éducation en contexte africain et le socle commun des
+                                        compétences</li>
+                                    <li>Obstacles épistémologiques aux processus d'enseignement-apprentissage dans les
+                                        disciplines scolaires : Sport- Français
+                                        -Anglais-Espagnol-Allemand-Mathématiques-Histoire Géographie-Philosophie</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- Axe 4 -->
+                        <details
+                            class="group bg-white rounded-lg border border-gray-200 shadow-sm open:ring-1 open:ring-blue-100">
+                            <summary
+                                class="flex justify-between items-center font-bold cursor-pointer p-4 list-none text-blue-900 hover:bg-blue-50 transition">
+                                <span>Axe 4 : Formation des formateurs</span>
+                                <span class="transition group-open:rotate-180">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 p-4 pt-0 border-t border-gray-100 mt-2">
+                                <ul class="list-disc pl-5 space-y-2 mt-2">
+                                    <li>La pédagogie universitaire en question</li>
+                                    <li>La formation dans les ENS d'Afrique francophone : vers quelles réformes ?</li>
+                                    <li>Le statut des ENS d'Afrique francophone</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- Axe 5 -->
+                        <details
+                            class="group bg-white rounded-lg border border-gray-200 shadow-sm open:ring-1 open:ring-blue-100">
+                            <summary
+                                class="flex justify-between items-center font-bold cursor-pointer p-4 list-none text-blue-900 hover:bg-blue-50 transition">
+                                <span>Axe 5 : Techniques de l'Information et de la Communication et Education</span>
+                                <span class="transition group-open:rotate-180">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 p-4 pt-0 border-t border-gray-100 mt-2">
+                                <p class="mt-2">Thèmes à définir.</p>
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+
+                <!-- Articles -->
+                <h2 id="articles" class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-900 p-2 rounded mr-3 text-sm"><i
+                            class="fas fa-book-open"></i></span>
+                    Articles Publiés
+                </h2>
+
+                <div class="space-y-6">
+
+                    <!-- Article 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> Juin 2023</span>
+                            <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded text-xs font-bold">Édito /
+                                Sommaire</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/REVUE PEDAGOGIE ET HUMANITES 001 JUIN 2023.pdf" target="_blank">
+                                REVUE PÉDAGOGIE ET HUMANITÉS N°001
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Directeur de publication</span>
+                            <a href="../assets/articles/REVUE PEDAGOGIE ET HUMANITES 001 JUIN 2023.pdf" target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Digitalisation des contenus, techno-transposition et enseignementapprentissage numérique interactif TAMO FOGUÉ Yannick SIH Marie-Pascale NGUELE OWONO Marie Joelle.pdf"
+                                target="_blank">
+                                Digitalisation des contenus, techno-transposition et enseignement-apprentissage
+                                numérique interactif
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">TAMO FOGUÉ Y., SIH M-P., NGUELE OWONO
+                                M.J.</span>
+                            <a href="../assets/articles/Digitalisation des contenus, techno-transposition et enseignementapprentissage numérique interactif TAMO FOGUÉ Yannick SIH Marie-Pascale NGUELE OWONO Marie Joelle.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Evaluation de l’autoformation des professeurs d’allemand dans les Lycées et Collèges au Bénin Laetitia ADAGNONHOUETON Jean-Claude HOUNMENOU.pdf"
+                                target="_blank">
+                                Evaluation de l’autoformation des professeurs d’allemand dans les Lycées et Collèges au
+                                Bénin
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Laetitia ADAGNONHOUETON, Jean-Claude
+                                HOUNMENOU</span>
+                            <a href="../assets/articles/Evaluation de l’autoformation des professeurs d’allemand dans les Lycées et Collèges au Bénin Laetitia ADAGNONHOUETON Jean-Claude HOUNMENOU.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 4 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Illettrisme pédagogique et autoformation BELLO Abdou Wahidi DJIMA Fatahou.pdf"
+                                target="_blank">
+                                Illettrisme pédagogique et autoformation
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">BELLO Abdou Wahidi, DJIMA Fatahou</span>
+                            <a href="../assets/articles/Illettrisme pédagogique et autoformation BELLO Abdou Wahidi DJIMA Fatahou.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 5 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                            <span class="bg-red-50 text-red-800 px-2 py-0.5 rounded text-xs font-bold">English</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Implementation of Cooperative Learning in EFL Classrooms OUSSEINI Hamissou MOUSSA M. Sani.pdf"
+                                target="_blank">
+                                Implementation of Cooperative Learning in EFL Classrooms
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">OUSSEINI Hamissou, MOUSSA M. Sani</span>
+                            <a href="../assets/articles/Implementation of Cooperative Learning in EFL Classrooms OUSSEINI Hamissou MOUSSA M. Sani.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 6 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Innovation par le management qualitatif dans l’enseignement secondaire Abdoulaye OUEDRAOGO.pdf"
+                                target="_blank">
+                                Innovation par le management qualitatif dans l’enseignement secondaire
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Abdoulaye OUEDRAOGO</span>
+                            <a href="../assets/articles/Innovation par le management qualitatif dans l’enseignement secondaire Abdoulaye OUEDRAOGO.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 7 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/La pratique de la pédagogie différenciée Casimir KABORE Adama KERE.pdf"
+                                target="_blank">
+                                La pratique de la pédagogie différenciée
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Casimir KABORE, Adama KERE</span>
+                            <a href="../assets/articles/La pratique de la pédagogie différenciée Casimir KABORE Adama KERE.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 8 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Les représentations de l’APC en Afrique Jean-Claude HOUNMENOU.pdf"
+                                target="_blank">
+                                Les représentations de l’APC en Afrique
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Jean-Claude HOUNMENOU</span>
+                            <a href="../assets/articles/Les représentations de l’APC en Afrique Jean-Claude HOUNMENOU.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 9 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Les technologies de l’information et de la communication dans l’enseignement et l’apprentissage socioconstructiviste GOHI Lou Gobou Bien-aimée.pdf"
+                                target="_blank">
+                                Les TIC dans l’enseignement et l’apprentissage socioconstructiviste
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">GOHI Lou Gobou Bien-aimée</span>
+                            <a href="../assets/articles/Les technologies de l’information et de la communication dans l’enseignement et l’apprentissage socioconstructiviste GOHI Lou Gobou Bien-aimée.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 10 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Modèle didactique de formation des enseignants des sciences expérimentales Mathias KYÉLEM.pdf"
+                                target="_blank">
+                                Modèle didactique de formation des enseignants des sciences expérimentales
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Mathias KYÉLEM</span>
+                            <a href="../assets/articles/Modèle didactique de formation des enseignants des sciences expérimentales Mathias KYÉLEM.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 11 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Motivation en Formation par alternance Rachel N’goran KOUASSI Mesmin Adigra EHUI.pdf"
+                                target="_blank">
+                                Motivation en Formation par alternance
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Rachel N’goran KOUASSI, Mesmin Adigra
+                                EHUI</span>
+                            <a href="../assets/articles/Motivation en Formation par alternance Rachel N’goran KOUASSI Mesmin Adigra EHUI.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 12 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Obstacles à l’accès aux apprentissages scolaires des apprenants déficients auditifs HOUEDENOU Florentine Adjouavi.pdf"
+                                target="_blank">
+                                Obstacles à l’accès aux apprentissages scolaires des apprenants déficients auditifs
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">HOUEDENOU Florentine Adjouavi</span>
+                            <a href="../assets/articles/Obstacles à l’accès aux apprentissages scolaires des apprenants déficients auditifs HOUEDENOU Florentine Adjouavi.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 13 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Orientation des apprenants en Sciences de l’éducation au Bénin ZANOU Kouassi Valentin HOUESSOU Mahounan Modeste.pdf"
+                                target="_blank">
+                                Orientation des apprenants en Sciences de l’éducation au Bénin
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">ZANOU Kouassi Valentin, HOUESSOU Mahounan
+                                Modeste</span>
+                            <a href="../assets/articles/Orientation des apprenants en Sciences de l’éducation au Bénin ZANOU Kouassi Valentin HOUESSOU Mahounan Modeste.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 14 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Perception de la carrière des parents et choix de carrière chez les enfants Komlan AKOSSOU Badji OUYI,.pdf"
+                                target="_blank">
+                                Perception de la carrière des parents et choix de carrière chez les enfants
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">Komlan AKOSSOU, Badji OUYI</span>
+                            <a href="../assets/articles/Perception de la carrière des parents et choix de carrière chez les enfants Komlan AKOSSOU Badji OUYI,.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 15 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Pratiques d’utilisation des outils numériques KABORE Parfait SIA Benjamin OUEDRAOGO Emile Léo Paul BERE Afsata PARE KABORE.pdf"
+                                target="_blank">
+                                Pratiques d’utilisation des outils numériques
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">KABORE Parfait, SIA Benjamin, OUEDRAOGO
+                                Emile, BERE Paul, PARE KABORE Afsata</span>
+                            <a href="../assets/articles/Pratiques d’utilisation des outils numériques KABORE Parfait SIA Benjamin OUEDRAOGO Emile Léo Paul BERE Afsata PARE KABORE.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Article 16 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition shadow-sm group">
+                        <div class="flex items-center text-sm text-gray-500 mb-2 space-x-4">
+                            <span><i class="far fa-calendar mr-1"></i> 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-800 transition">
+                            <a href="../assets/articles/Ressentis émotionnels des élèves du cm2 par rapport aux évaluations au Burkina Faso TAMBOURA Amadou.pdf"
+                                target="_blank">
+                                Ressentis émotionnels des élèves du cm2 par rapport aux évaluations au Burkina Faso
+                            </a>
+                        </h3>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm font-semibold text-gray-800">TAMBOURA Amadou</span>
+                            <a href="../assets/articles/Ressentis émotionnels des élèves du cm2 par rapport aux évaluations au Burkina Faso TAMBOURA Amadou.pdf"
+                                target="_blank"
+                                class="text-blue-900 text-sm font-bold hover:underline bg-blue-50 px-3 py-2 rounded-full hover:bg-blue-100 transition">
+                                <i class="fas fa-file-pdf mr-1"></i> Lire le PDF
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm opacity-75">&copy; 2024 Revue Pédagogie et Humanités - Une publication Trajectoires
+                Sociales</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

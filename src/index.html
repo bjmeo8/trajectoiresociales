@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trajectoires Sociales - Philosophie, Éthique et Sciences de l’Éducation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Polices Google pour un style académique -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo / Titre -->
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-blue-900 text-white flex items-center justify-center rounded-sm font-serif font-bold text-xl">
+                    T</div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold text-blue-900 leading-tight">Trajectoires Sociales</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-wider">Philosophie, Éthique & Éducation</span>
+                </div>
+            </a>
+
+            <!-- Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-900 font-bold border-b-2 border-blue-900">Accueil</a>
+                <a href="#apropos" class="text-gray-600 hover:text-blue-900 transition">À propos</a>
+                <a href="#revues" class="text-gray-600 hover:text-blue-900 transition">Les Revues</a>
+                <a href="appel-a-contribution.html" class="text-gray-600 hover:text-blue-900 transition">Appels à
+                    contribution</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-900 transition">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Recherche & Savoirs Partagés</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-8">
+                Une plateforme dédiée à la diffusion des travaux en philosophie, éthique et sciences de l'éducation.
+            </p>
+            <a href="#revues"
+                class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded transition shadow-lg">
+                Découvrir nos revues
+            </a>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Bibliothèque" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="text-blue-900 font-bold uppercase tracking-wider mb-2 text-sm">Notre Mission</div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 font-serif">Promouvoir la recherche en sciences
+                        humaines</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong>Trajectoires Sociales</strong> est un espace de publication et de diffusion scientifique
+                        affilié au Laboratoire de Pédagogie et de Didactique des Humanités (LAPEDIH) de l'ENS-UAC Bénin.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Notre objectif est de valoriser les travaux de recherche originaux dans les domaines de la
+                        pédagogie, de la philosophie, de l'éthique et des sciences sociales, en offrant une plateforme
+                        rigoureuse et accessible aux chercheurs et praticiens.
+                    </p>
+                    <a href="appel-a-contribution.html" class="text-blue-900 font-bold hover:underline">
+                        Voir comment contribuer <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Revues -->
+    <main id="revues" class="container mx-auto px-6 py-16 flex-grow bg-gray-50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Nos Revues Scientifiques</h2>
+            <div class="w-24 h-1 bg-blue-900 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Carte Revue 1: Pédagogie et Humanités -->
+            <article
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100 flex flex-col">
+                <div class="relative h-48 bg-gray-200 overflow-hidden group">
+                    <!-- Image placeholder qui ressemble à une couverture de revue -->
+                    <img src="https://placehold.co/600x400/1e3a8a/FFFFFF/png?text=P%C3%A9dagogie+%26+Humanit%C3%A9s"
+                        alt="Couverture Revue"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        Volume 1
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="text-sm text-blue-600 font-semibold mb-2">Sciences Pédagogiques</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pédagogie et Humanités</h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                        Revue dédiée à l'exploration des liens entre les pratiques pédagogiques et les humanités,
+                        interrogeant les enjeux éducatifs contemporains.
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500"><i class="far fa-calendar-alt mr-1"></i> Trimestriel</span>
+                        <a href="revues/pedagogie-et-humanite.html"
+                            class="text-blue-900 font-bold text-sm hover:underline flex items-center">
+                            Lire la revue <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Carte Revue 2 (Exemple) -->
+            <article
+                class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition border border-gray-100 flex flex-col opacity-75">
+                <div class="relative h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://placehold.co/600x400/9ca3af/FFFFFF/png?text=%C3%89thique+Sociale"
+                        alt="Couverture Revue" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="text-sm text-gray-500 font-semibold mb-2">Philosophie</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cahiers d'Éthique Sociale</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Analyses philosophiques des dynamiques sociales actuelles et des questions éthiques émergentes.
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500">Bientôt disponible</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4 font-serif">Trajectoires Sociales</h4>
+                <p class="text-gray-400 text-sm">
+                    Une initiative pour promouvoir la recherche en sciences humaines et sociales.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 font-serif">Liens Rapides</h4>
+                <ul class="text-gray-400 text-sm space-y-2">
+                    <li><a href="index.html" class="hover:text-white transition">Accueil</a></li>
+                    <li><a href="appel-a-contribution.html" class="hover:text-white transition">Soumettre un article</a>
+                    </li>
+                    <li><a href="revues/comites-peh.html" class="hover:text-white transition">Comités scientifiques</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 font-serif">Contact</h4>
+                <p class="text-gray-400 text-sm">
+                    <i class="far fa-envelope mr-2"></i> contact@trajectoires-sociales.org<br>
+                    <i class="fas fa-map-marker-alt mr-2"></i> Cotonou, Bénin
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-xs">
+            &copy; 2024 Trajectoires Sociales. Tous droits réservés.
+        </div>
+    </footer>
+
+</body>
+
+</html>
